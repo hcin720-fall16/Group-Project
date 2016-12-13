@@ -1,7 +1,7 @@
 #Ambient Display of Tide
 
 www.ameliakeller.com/ambient-display
-
+Click for process and further documentation
 
 Our ambient display can visualize heights of tide data from the nearest coast to a chosen location. Data of tide comes from the WorldTide API (worldtides.info). The display shows the height of tide at the moment and it is updated every 30 minutes.
 
