@@ -14,6 +14,8 @@ The photon receives data of tide from the Particle cloud. The height of tide cor
 
 For this project, we were inspired by artists Soo-Hwa Yuan and Jennifer Townley. The weights in their work, paired with string or fabric, allows them to create intricate shapes. We used string because it is dynamic and has an interesting look when woven and pulled tightly.
 
+![fullsizerender](https://cloud.githubusercontent.com/assets/21246026/21150805/5540d666-c12e-11e6-9b32-c5d533e46607.jpg)
+
 ##Parts
 Particle Photon
 
