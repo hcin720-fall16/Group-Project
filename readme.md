@@ -16,6 +16,9 @@ For this project, we were inspired by artists Soo-Hwa Yuan and Jennifer Townley.
 
 ##Parts
 Particle Photon
+
 Servo Motor
+
 Gears (laser cut arylic)
+
 Strings
