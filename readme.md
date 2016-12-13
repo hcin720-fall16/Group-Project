@@ -1,6 +1,6 @@
 Concept
 
-ameliakeller.com/ambient-display
+www.ameliakeller.com/ambient-display
 
 For our ambient display, we chose to visualize tide data from the coordinates closest to us (Rochester, NY) using the WorldTide API (worldtides.info). Powered by the servo, the gears turn according to the angle corresponding to the tide height (measured between 1 to -1). We accounted for the servo having a range of 0 to 180 degrees. 
 
