@@ -16,6 +16,8 @@ For this project, we were inspired by artists Soo-Hwa Yuan and Jennifer Townley.
 
 ![fullsizerender](https://cloud.githubusercontent.com/assets/21246026/21150805/5540d666-c12e-11e6-9b32-c5d533e46607.jpg)
 
+Figure 1. Final Project. Strings are stretched in a woven formation to represent high tide
+
 ##Parts
 Particle Photon
 
