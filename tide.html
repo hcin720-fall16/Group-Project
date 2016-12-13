@@ -1,0 +1,76 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Tide Data</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+</head>
+
+<body>
+  <script src="jquery-3.1.1.min.js"></script>
+
+ <script>
+ 
+ $(document).ready(function() {
+ var heights = [];
+ var tideKey = '64b52e52-ab3f-44ed-a716-35c58615f452';
+  //var $ = window.$;
+   $.ajax({
+      method:"GET",
+     url:'https://www.worldtides.info/api',
+      data:{
+          //https://www.worldtides.info/api?heights&lat=43.161030&lon=-77.610922&key=64b52e52-ab3f-44ed-a716-35c58615f452
+          heights:'heights',
+          key:tideKey,
+          lat:43.161030,
+          lon:-77.610922
+      }
+
+   }).done(function(results){
+       console.log(results);
+      for(var i=0;i<results.heights.length;i++){
+       heights.push(results.heights[i].height);
+      }
+      console.log(heights);
+   });
+//how much condensed time is a ratio
+ //get data
+ //when there is no more data in the array, get more data
+
+ //put heights in an array
+
+ // take and remove a height from the array and send to photon every interval
+
+
+   var index = 0;
+   var deviceID = "280026001847343338333633";
+   var accessToken = "b00c6e68a06e940a3ae06f9fa2f8cc70d5da2957";
+   var setFunc = "tide";
+
+   function sendHeight() {
+
+     var height = heights[index];
+       var requestURL = "https://api.spark.io/v1/devices/" +deviceID + "/" + setFunc + "/";
+     $.post( requestURL, { params: height, access_token: accessToken });
+     console.log(height);
+     console.log(index);
+     index++;
+     if(index>=heights.length){
+       index=0;
+     }
+   }
+
+    setInterval(sendHeight,3000);
+
+
+});
+
+</script>
+    
+</body>
+</html>
+
